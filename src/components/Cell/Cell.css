@@ -1,0 +1,90 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+body {
+  font-family: "Pangolin", cursive;
+} */
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vmin;
+  font-weight: bold;
+  color: var(--accent-color);
+  /* background: var(--primary-gradient); */
+  /* border: var(--default-primary-border); */
+  /* border-radius: var(--default-border-radius); */
+  border: 2vmin solid white;
+  border-image: var(--image-border) 50 round;
+  /* outline: none; */
+  /* box-shadow: var(--box-shadow); */
+  font-family: "Pangolin", cursive;
+
+  background: var(--font-texture) no-repeat center center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.cell:active,
+.cell:hover,
+.cell.winner {
+  cursor: pointer;
+  color: var(--content-background-color);
+
+  background: var(--font-texture) no-repeat center center;
+  background-size: cover;
+  -webkit-text-fill-color: var(--content-background-color);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.cell-content {
+  /* overflow: hidden; */
+  width: 0;
+  height: 0;
+  transition: width var(--selection-animation-duration),
+    height var(--selection-animation-duration);
+}
+
+.cell-content.populated {
+  width: 12vmin;
+  height: 12vmin;
+}
+
+.cell.tie,
+.cell-content.winner {
+  animation: blinker 1s linear 3;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.cell-button {
+  background-color: transparent;
+  margin: 0%;
+}
+
+.cell-button:hover {
+  background-color: #a5a5a5;
+  opacity: 0.9;
+}
+
+.br_0 {
+  border-right: 0;
+}
+
+.bl_0 {
+  border-left: 0;
+}
+
+.bt_0 {
+  border-top: 0;
+}
+
+.bb_0 {
+  border-bottom: 0;
+}

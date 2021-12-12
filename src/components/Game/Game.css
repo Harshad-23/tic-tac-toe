@@ -1,0 +1,161 @@
+#game {
+  border-radius: var(--default-border-radius);
+  padding: 2vmin;
+}
+
+h1 {
+  color: var(--accent-color);
+  text-align: center;
+  margin-bottom: 1vmin;
+  font-size: var(--main-title-font-size);
+  background: var(--font-texture) no-repeat center center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+h3,
+p {
+  color: var(--accent-color);
+  font-size: var(--secondary-title-font-size);
+  background: var(--font-texture) no-repeat center center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+/* playerinfo */
+form {
+  margin: auto;
+  padding: 0;
+  width: 100vmin;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  border-image: var(--image-border) 30 round;
+  background-color: transparent;
+  /* border-radius: 4px; */
+  box-sizing: border-box;
+  color: var(--accent-color);
+  font-family: "Pangolin", cursive;
+  font-size: 3.5vmin;
+}
+
+.input:focus {
+  outline: none !important;
+  border: 1px solid papayawhip;
+  box-shadow: 0 0 5px #719ece;
+}
+button {
+  width: 100%;
+  background-color: var(--primary-saturated);
+  /* background-color: var(--primary-gradient); */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Pangolin", cursive;
+  font-size: 3.5vmin;
+}
+button:hover {
+  /* background-color: var(--primary-brighter); */
+  background: var(--primary-highlight-gradient);
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fas:hover {
+  cursor: pointer;
+}
+.icon-column {
+  float: right;
+  width: 20%;
+}
+
+/* Checkbox */
+:root {
+  font-size: 3.5vmin;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input + label {
+  width: 15vmin;
+  /* height: 1.5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  background-color: var(--primary-saturated);
+  transition: 0.1s all;
+  cursor: pointer;
+  z-index: 999 !important;
+}
+
+input + label:hover {
+  transform: scale(0.95);
+  background: var(--primary-highlight-gradient);
+}
+
+input + label:after {
+  content: "👨‍👦";
+  color: #ccc;
+}
+
+input:checked + label {
+  background: var(--primary-saturated);
+}
+
+input:checked + label:hover {
+  background: var(--primary-brighter);
+  transform: scale(1.05);
+}
+
+input:checked + label:after {
+  content: "🖥️";
+}
+/* Checkbox end*/
+
+.row-h {
+  width: 80%;
+  display: inline-block;
+}
+
+.col-2 {
+  width: 20%;
+  float: left;
+}
+.col-12 {
+  width: 80%;
+  float: right;
+}

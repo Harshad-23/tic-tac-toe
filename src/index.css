@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+:root {
+  --content-background-color: #fff6be;
+  --background-image: url("./assets/img/blackboard3.jpg");
+
+  --primary-color: #898c8f;
+  --primary-brighter: #7d7d7d;
+  --primary-saturated: #696969;
+  --primary-saturated-brighter: #6e6a6a;
+  --accent-color: beige;
+  --accent-darker: #a79000;
+  /* --accent-darker: #a79000; */
+  --box-shadow-color: rgba(0, 0, 0, 0.75);
+  --modal-overlay-color: rgba(0, 0, 0, 0.3);
+  --primary-gradient: linear-gradient(
+    to right,
+    var(--primary-color) 0%,
+    var(--primary-saturated) 100%
+  );
+  --primary-highlight-gradient: linear-gradient(
+    to right,
+    var(--primary-brighter) 0%,
+    var(--primary-saturated-brighter) 100%
+  );
+  --box-shadow: 0 1vmin 2vmin -1vmin rgba(0, 0, 0, 0.75);
+  --font-texture: url("./assets/img/texture.jpg");
+  --image-border: url("./assets/img/border-1.png");
+  --default-border-radius: 2vmin;
+  --default-primary-border: 0.25vmin solid var(--primary-color);
+  --default-accent-border: 0.25vmin solid var(--accent-darker);
+  --main-title-font-size: 7vmin;
+  --secondary-title-font-size: 4.5vmin;
+
+  --selection-animation-duration: 300ms;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  /* display: grid;
+  place-items: center center; */
+  overflow: hidden;
+}
+
+body {
+  display: grid;
+  place-items: center center;
+  background: var(--background-image);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: "Pangolin", cursive;
+}

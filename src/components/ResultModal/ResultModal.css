@@ -1,0 +1,73 @@
+#modal-overlay {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: var(--modal-overlay-color);
+}
+
+#modal-overlay.modal-open {
+  display: grid;
+}
+
+#game-result-modal {
+  display: grid;
+  grid-row-gap: 75vmin;
+
+  --modal-items-border-radius: 1vmin;
+}
+
+#result-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+#winner-container {
+  margin-bottom: 4vmin;
+  width: 100%;
+  height: 8vmin;
+  font-size: 7vmin;
+  font-weight: bold;
+  /* color: var(--primary-color); */
+  color: aliceblue;
+  background: var(--background-image);
+  /* border: var(--default-accent-border); */
+  box-shadow: var(--box-shadow);
+  border-radius: var(--modal-items-border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vmin;
+}
+
+#new-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2.5vmin;
+}
+
+#new-game-container > button {
+  font-size: 3vmin;
+  padding: 1.5vmin;
+  width: auto;
+  color: var(--accent-color);
+  background: var(--primary-gradient);
+  outline: none;
+  box-shadow: var(--box-shadow);
+}
+
+#new-game-container > button:hover,
+#new-game-container > button:active {
+  color: var(--content-background-color);
+  cursor: pointer;
+  background: var(--primary-highlight-gradient);
+}
+
+img {
+  width: auto;
+  height: 100%;
+}

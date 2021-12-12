@@ -1,0 +1,8 @@
+#board {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 20vmin);
+  grid-template-rows: repeat(3, 20vmin);
+  grid-gap: 0;
+  margin: 2vmin 0;
+}
